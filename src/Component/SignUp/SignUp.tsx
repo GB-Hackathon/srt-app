@@ -1,8 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./SignUp.css";
+import { Link } from "react-router-dom"
+import "./SignUp.css"
+import { ChangeEvent, useState } from "react";
 
 const SignUp: React.FC = () => {
+  const [user, setUser] = useState({
+    name: '',
+    email: '',
+    password: '',
+    tel: ''
+  })
+
   return (
     <div className="signup_inner">
       <div style={{ width: "100%" }}>
@@ -15,13 +22,9 @@ const SignUp: React.FC = () => {
 
         <div className="signup_form">
           <label htmlFor="pw">이름</label>
-          <input id="name" type="text" placeholder="ex) 손보석"></input>
+          <input id="name" type="text" placeholder="ex) 손보석" value={user.name} onChange={(e: ChangeEvent<HTMLInputElement>) => setUser({ ...user, name: e.target.value })}></input>
           <label htmlFor="email">이메일</label>
-          <input
-            id="email"
-            type="email"
-            placeholder="example123@email.com"
-          ></input>
+          <input id="email" type="email" placeholder="example123@email.com" value={user.email} onChange={(e: ChangeEvent<HTMLInputElement>) => setUser({ ...user, email: e.target.value })}></input>
           <label htmlFor="pw">비밀번호</label>
           <input
             id="pw"

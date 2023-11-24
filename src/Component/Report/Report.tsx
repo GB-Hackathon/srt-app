@@ -17,7 +17,7 @@ const Report: React.FC = () => {
 
     axios
       .post(
-        '/eme',
+        '/api/eme',
         { image: img.split(',')[1] },
         {
           headers: {

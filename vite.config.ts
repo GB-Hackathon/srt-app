@@ -6,16 +6,11 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/eme': {
+      '/api': {
         target: 'http://3.34.136.173:1234',
         secure: false,
         ws: true
       },
-      '/dif': {
-        target: 'http://3.34.136.173:1234',
-        secure: false,
-        ws: true
-      }
     }
   }
 })

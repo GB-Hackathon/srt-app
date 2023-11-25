@@ -8,7 +8,7 @@ const Report: React.FC = () => {
   const navigate = useNavigate();
   const webcam: any = useRef();
   let constraints = {
-    facingMode: { exact: "user" },
+    facingMode: { exact: "background" },
   };
 
   const getCapture = useCallback(() => {

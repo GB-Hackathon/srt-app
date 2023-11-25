@@ -605,6 +605,11 @@
   resolved "https://registry.yarnpkg.com/@types/stylis/-/stylis-4.2.4.tgz#14b61f022e832d87d442ae1795e0f0f0b7daa879"
   integrity sha512-36ZrGJ8fgtBr6nwNnuJ9jXIj+bn/pF6UoqmrQT7+Y99+tFFeHHsoR54+194dHdyhPjgbeoNz3Qru0oRt0l6ASQ==
 
+"@types/webrtc@^0.0.41":
+  version "0.0.41"
+  resolved "https://registry.yarnpkg.com/@types/webrtc/-/webrtc-0.0.41.tgz#681aeb099dc99abae5e999e17aca97774da7253e"
+  integrity sha512-8ffcmVtlMQe4GgVavKyCVRkiCOXguAkFNT6KmXb+aE5kB6D/qpI6aNpdHeHI206oJdmIhdTyObHbJ6I8Gq90Pg==
+
 "@typescript-eslint/eslint-plugin@^6.10.0":
   version "6.12.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-6.12.0.tgz#2a647d278bb48bf397fef07ba0507612ff9dd812"

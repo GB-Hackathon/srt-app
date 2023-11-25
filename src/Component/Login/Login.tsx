@@ -8,7 +8,7 @@ const Login: React.FC = () => {
       <div style={{ width: "100%" }}>
         <div className="login_back">
           <Link to="/" style={{ textDecoration: "none" }}>
-            <img src="src\assets\back.png" alt="" />
+            <img src="back.png" alt="" />
           </Link>
           <div className="login_back-title">로그인</div>
         </div>

@@ -6,11 +6,7 @@ const Submit: React.FC = () => {
   return (
     <div className="submit_inner">
       <div className="submit_up">
-        <img
-          src="src\Component\Submit\report_success.png"
-          alt=""
-          className="submit_img"
-        />
+        <img src="report_success.png" alt="" className="submit_img" />
       </div>
       <div className="edit_btn-container">
         {/* 페이지 이동 */}

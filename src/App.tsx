@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="app_inner">
       <div className="app_main">
-        <img className="app_img" src="src\assets\srt-logo.svg" alt="" />
+        <img className="app_img" src="srt-logo.svg" alt="" />
         <div className="app_title">
           Safety ReporT <strong>SRT</strong>
         </div>

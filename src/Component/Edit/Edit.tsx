@@ -7,7 +7,7 @@ const Edit: React.FC = () => {
     <div className="edit_inner">
       <div className="edit_back">
         <Link to="/report" style={{ textDecoration: "none" }}>
-          <img src="src\assets\back.png" alt="" />
+          <img src="back.png" alt="" />
         </Link>
         <div className="edit_back-title">AI 분석하기</div>
       </div>

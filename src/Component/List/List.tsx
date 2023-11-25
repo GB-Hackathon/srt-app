@@ -28,7 +28,7 @@ const List: React.FC = () => {
       <div style={{ width: "100%", height: "100%" }}>
         <div className="signup_back">
           <Link to="/" style={{ textDecoration: "none" }}>
-            <img src="src\assets\back.png" alt="" />
+            <img src="back.png" alt="" />
           </Link>
           <div className="signup_back-title">신고내역</div>
         </div>

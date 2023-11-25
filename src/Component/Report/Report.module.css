@@ -30,7 +30,7 @@
   }
 }
 
-.report_cam-container {
+.report_cam_container {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -82,7 +82,7 @@
   transform: scale(1.05);
 }
 
-.report_switch-camera {
+.report_switchcamera {
   all: unset;
   width: 36px;
   height: 36px;
@@ -90,4 +90,36 @@
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
+}
+
+.login_back {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.back_btn {
+  margin-right: 10px;
+}
+
+.login_back a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_back img {
+  width: 20px;
+  height: 20px;
+}
+
+.login_back-title {
+  padding-left: 10px;
 }

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import "./SignUp.css"
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useState } from "react"
 
 const SignUp: React.FC = () => {
   const [user, setUser] = useState({

@@ -1,8 +1,9 @@
 import { useCallback, useRef } from 'react'
-import './Report.css'
+import style from './Report.module.css'
 import Webcam from 'react-webcam'
 import axios from 'axios'
 import { Webhook, MessageBuilder } from 'discord-webhook-node'
+import { Link } from 'react-router-dom'
 
 const Report: React.FC = () => {
   const webcam: any = useRef()
@@ -44,15 +45,21 @@ const Report: React.FC = () => {
   }, [webcam])
 
   return (
-    <div className='report_inner'>
-      <div className='report_cam-container'>
-        <div className='report_cambox'>
+    <div className={style.report_inner}>
+      <div className={style.login_back}>
+        <Link className={style.back_btn} to='/' style={{ textDecoration: 'none' }}>
+          <img src='src\assets\back.png' alt='' />
+        </Link>
+        <div className={style.login_back_title}>신고하기</div>
+      </div>
+      <div className={style.report_cam_container}>
+        <div className={style.report_cambox}>
           <Webcam videoConstraints={constraints} mirrored={true} disablePictureInPicture={true} className='webcam' ref={webcam} />
         </div>
-        <div className='report_btnbox'>
-          <div className='report_album' />
-          <button className='report_submit' onClick={getCapture}></button>
-          <div className='report_switch-camera' />
+        <div className={style.report_btnbox}>
+          <div className={style.report_album} />
+          <button className={style.report_submit} onClick={getCapture}></button>
+          <div className={style.report_switch_camera} />
         </div>
       </div>
     </div>

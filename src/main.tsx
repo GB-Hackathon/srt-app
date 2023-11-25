@@ -5,6 +5,7 @@ import Signup from "./Component/SignUp/SignUp.tsx";
 import Report from "./Component/Report/Report.tsx";
 import Edit from "./Component/Edit/Edit.tsx";
 import Submit from "./Component/Submit/Submit.tsx";
+import List from "./Component/List/List.tsx";
 import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <Route path="report" element={<Report />} />
       <Route path="edit" element={<Edit />} />
       <Route path="submit" element={<Submit />} />
+      <Route path="list" element={<List />} />
     </Routes>
   </BrowserRouter>
 );
